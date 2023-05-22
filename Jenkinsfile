@@ -2,10 +2,10 @@ pipeline {
     agent none
 	
 	environment {
-	DOCKER_HOST= tcp://docker:2375
-	DOCKER_DRIVER= overlay2
-	DOCKER_TLS_CERTDIR= ""
-	GIT_SSL_NO_VERIFY= "1"
+	DOCKER_HOST = "tcp://docker:2375"
+	DOCKER_DRIVER = "overlay2"
+	DOCKER_TLS_CERTDIR = ""
+	GIT_SSL_NO_VERIFY = "1"
 	}
 
     stages {
